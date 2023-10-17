@@ -1,0 +1,1 @@
+RENAME TABLE `team` TO `teams`;

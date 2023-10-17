@@ -1,0 +1,48 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1696923232699,
+      "tag": "0000_stiff_ultimatum",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1696923842156,
+      "tag": "0001_grey_wild_pack",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1696924053154,
+      "tag": "0002_fluffy_adam_warlock",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1696924135690,
+      "tag": "0003_ambitious_gideon",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1696924285882,
+      "tag": "0004_absurd_flatman",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1696925013350,
+      "tag": "0005_tan_agent_brand",
+      "breakpoints": true
+    }
+  ]
+}

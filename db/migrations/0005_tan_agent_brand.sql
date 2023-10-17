@@ -1,0 +1,3 @@
+ALTER TABLE `playerGuardians` ADD CONSTRAINT `playerGuardians_playerId_players_id_fk` FOREIGN KEY (`playerId`) REFERENCES `players`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `playerGuardians` ADD CONSTRAINT `playerGuardians_guardianId_guardians_id_fk` FOREIGN KEY (`guardianId`) REFERENCES `guardians`(`id`) ON DELETE no action ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE `players` ADD CONSTRAINT `players_teamId_teams_id_fk` FOREIGN KEY (`teamId`) REFERENCES `teams`(`id`) ON DELETE no action ON UPDATE no action;
