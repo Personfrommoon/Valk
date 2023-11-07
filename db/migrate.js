@@ -1,3 +1,4 @@
+import { MySqlDateColumnBaseBuilder } from "drizzle-orm/mysql-core/columns/date.common";
 import { drizzle } from "drizzle-orm/mysql2";
 import { migrate } from "drizzle-orm/mysql2/migrator";
 import { createConnection } from "mysql2";
