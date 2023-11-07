@@ -98,6 +98,33 @@ const db = mysql.createConnection({
     res.redirect('/');
   });
 
+  // Insert the team data into the teams table
+app.post('/insertteam', (req, res) => {
+  const { teamName } = req.body;
+
+  db.query('INSERT INTO teams (name) VALUES (?)', [teamName], (err, results) => {
+    if (err) {
+      console.error('Error inserting team data: ' + err.message);
+    } else {
+      console.log('Team data inserted');
+      // Now you can insert the player with the newly generated teamId
+      const newTeamId = results.insertId;
+      insertPlayer(name, birthday, newTeamId);
+    }
+  });
+});
+
+// Function to insert player data
+function insertPlayer(name, birthday, teamId) {
+  db.query('INSERT INTO players (name, birthday, teamId) VALUES (?, ?, ?)', [name, birthday, teamId], (err, results) => {
+    if (err) {
+      console.error('Error inserting player data: ' + err.message);
+    } else {
+      console.log('Player data inserted');
+    }
+  });
+}
+
   app.get('/edit', (req, res) => {
     // Get the player ID from the query parameters in the URL
     const playerId = req.query.id;
